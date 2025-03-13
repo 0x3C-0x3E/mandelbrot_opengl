@@ -7,6 +7,8 @@ INCLUDE_DIRS = -Iinclude/GLFW -Iinclude/glad -Iinclude/KHR $(addprefix -I, $(wil
 LIB_DIRS = -Llib
 LIBS = -limgui -lglfw3 -lgdi32 -lopengl32
 
+OBJ_DIR = obj
+
 SRC = $(wildcard src/*.c) $(wildcard src/*/*.c)
 OBJ = $(patsubst src/%.c, $(OBJ_DIR)/%.o, $(SRC))
 
